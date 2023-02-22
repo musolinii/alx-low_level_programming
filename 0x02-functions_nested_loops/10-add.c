@@ -2,8 +2,8 @@
 
 /**
  * add - Suma dos enteros por función.
- * @i: Primera varable entera a sumar.
- * @l: Segunda variable a sumar.
+ * @a: Primera varable entera a sumar.
+ * @b: Segunda variable a sumar.
  * Return: retorno con sumatoria
  */
 int add(int a, int b)
