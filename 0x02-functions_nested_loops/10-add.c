@@ -6,7 +6,7 @@
  * @l: Segunda variable a sumar.
  * Return: retorno con sumatoria
  */
-int add(int a , int b)
+int add(int a, int b)
 {
 	int n;
 	 n = a + b;
