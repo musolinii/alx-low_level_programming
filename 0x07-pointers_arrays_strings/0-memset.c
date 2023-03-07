@@ -1,4 +1,4 @@
-#include "MAIN.h"
+#include "main.h"
 
 /**
  * *_memset - main function.
