@@ -8,7 +8,11 @@
  * Return
  */
 
+<<<<<<< HEAD
 char *memcpy(char *dest, char *src, unsigned int n)
+=======
+char *_memcpy(char *dest, char *src, unsigned int n)
+>>>>>>> b57f90b (fix stuff)
 {
     unsigned int i = 0;
 
