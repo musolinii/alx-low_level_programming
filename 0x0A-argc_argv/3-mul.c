@@ -1,5 +1,5 @@
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - multiply two numbers
  * @argc: arguement count
@@ -8,18 +8,17 @@
  **/
 int main(int argc, char *argv[])
 {
-        int product = 0;
-        int a, b;
+	int a, b, result;
 
-        if (argc < 3)
-        {
-                printf("Error\n");
-                return 1;
-        }
+	if (argc <= 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 /* atoi convert a string to an int */
-        a = atoi(argv[1]);
-        b = atoi(argv[2]);
-        product = a * b;
-        printf("%d", product);
-        return 0;
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	result = a * b;
+	printf("%d\n", result);
+	return (0);
 }
