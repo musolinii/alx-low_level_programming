@@ -1,12 +1,12 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * num_checker - checks if a given char is number or not
  * @a: char to be checked
  * Return: 1, if its a number, else 0
  **/
-int checker(char *a)
+int num_checker(char *a)
 {
 	int i, num, len;
 
@@ -32,22 +32,20 @@ int checker(char *a)
  * Return: result of addition or 1
  **/
 int main(int argc, char *argv[])
-{ 
+{
+	int i, num, sum;
 
-        int i;
-        int sum = 0;
-        int num = 0;
-        for(i = 1; i < argc; i++)
-        {
-                num = checker(argv[i]);
-                if (num == -1)
-                {
-                        printf("Error\n");
-                        return 1;
-                }
-
-                sum += atoi(argv[i]);
-        }
-        printf("%d\n", sum);
-        return 0;
+	sum = 0;
+	for (i = 1; i < argc; i++)
+	{
+		num = num_checker(argv[i]);
+		if (num == -1)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum += num;
+	}
+	printf("%d\n", sum);
+	return (0);
 }
