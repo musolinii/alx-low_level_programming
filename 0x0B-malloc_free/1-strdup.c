@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  * *_strdup - returns a pointer to a newly allocated space with copy of arg
  * @str: string to copy
@@ -7,26 +7,23 @@
  **/
 char *_strdup(char *str)
 {
-        char *s;
-        int i = 0;
-        int j;
+	char *strDup;
+	int i, j;
 
-        while (str[i] != '\0')
-        {
-                i++; 
-        }
-
-        s = malloc(sizeof(char) * i);
-
-        if (s == NULL)
-                return NULL;
-
-        j = 0;
-        while (str[j] != '\0')
-        {
-                str[j] = s[j];
-                j++;
-        }
-        return (s);
-
+	if (str == NULL)
+		return (NULL);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	i++;
+	strDup = malloc(sizeof(*str) * i);
+	if (strDup == NULL)
+		return (NULL);
+	j = 0;
+	while (str[j] != '\0')
+	{
+		strDup[j] = str[j];
+		j++;
+	}
+	return (strDup);
 }
